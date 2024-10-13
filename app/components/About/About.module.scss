@@ -1,0 +1,45 @@
+.About {
+
+    &__aboutContainer {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 5px;
+        grid-auto-rows: minmax(100px, auto);
+        border: 1.5px solid black;
+        padding: 1px;
+    }
+
+    &__aboutTitle {
+
+        grid-row: 1/4;
+        border-right: 1.5px solid black;
+
+        h1 {
+            writing-mode: vertical-rl;
+            padding-top: 10px;
+        }
+    }
+
+    &__aboutBody {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    &__aboutMe {
+
+        display: flex;
+        flex-direction:column;
+        grid-row: 1/4;
+        grid-column: 2/5;
+        // overflow-wrap: break-word;
+        // line-break:normal;
+
+        span {
+            // opacity: 0.2;
+            color: black;
+            font-size: 3.0vw;
+            margin: 0px;
+            font-weight: 500;
+        }
+    }
+}

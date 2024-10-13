@@ -1,0 +1,31 @@
+.section {
+    height: auto; 
+    background-color: black;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    padding-bottom: 5px;
+    grid-auto-rows: minmax(10vh, auto);
+    padding: 1px;
+    position: relative;
+}
+
+.link {
+    font-family: 'Matter Regular, sans-serif';
+}
+
+.linkStyle {
+    position: relative;
+    font-size: 40px;
+    font-weight: 500;
+    text-decoration: none;
+    color: white;
+    letter-spacing: 0.2rem;
+}
+
+.containerStyle {
+    display: flex;
+    position: relative;
+    align-items: center;
+    justify-content: flex-start;
+    padding-left: 50px;
+}

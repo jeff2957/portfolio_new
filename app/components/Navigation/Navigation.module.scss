@@ -1,0 +1,45 @@
+.stickyNav {
+    position: fixed;
+    top: 20px;
+    margin-top: 1%;
+    width: 300px;
+    left: 50%; /* Center horizontally */
+    transform: translateX(-50%); /* Offset by half of its width */
+    z-index: 1000;
+    background-color: rgba(19, 19, 19, 0.9);
+    padding: 10px 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.stickyNav ul {
+    list-style-type: none;
+    padding: 0;
+    // margin: 0;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.stickyNav li {
+    margin: 0;
+}
+
+.stickyNav a {
+    text-decoration: none;
+    color: #ffffff;
+    opacity: 0.2;
+    font-weight: lighter;
+    display: inline-block;
+    transition: color 0.3s ease;
+}
+
+.stickyNav a:hover {
+    color: #ecebeb8b;
+
+}
+
+.link {
+    font-size: 2vw;
+}
+

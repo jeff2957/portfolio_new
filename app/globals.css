@@ -1,0 +1,72 @@
+*,
+*:before,
+*:after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: 'Grande Italic';
+  src: url('/fonts/Grande Italic.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Vault Neu';
+  src: url('/fonts/Vault Monospaced.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Canelope Italic';
+  src: url('/fonts/canelope-italic.ttf') format('truetype');
+  font-weight: normal;
+}
+
+html {
+  font-size: calc(100vw / 1728 * 10);
+}
+
+body {
+  font-size: clamp(16px, 1.6rem, 1.6rem);
+  font-family: "Matter Regular", sans-serif;
+  font-style: normal;
+  font-variation-settings: "ital" 0, "wght" 400;
+  /* background-color: white;  */
+  color: black;
+  min-height: 100vh;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  width: 100%;
+  letter-spacing: -0.03em;
+  overflow-y: scroll;
+}
+
+[data-hidden] {
+  opacity: 0;
+}
+
+h1 {
+  font-size: 12rem;
+  font-weight: 400;
+  letter-spacing: -0.03em;
+}
+
+h4 {
+  font-size: 8rem;
+  font-weight: 100;
+  letter-spacing: -0.05em;
+}
+
+.self-intro {
+  p {
+  font-family: "Grande Italic", sans-serif;
+  color: black;
+  /* font-weight: 600; */
+  }
+}
+
