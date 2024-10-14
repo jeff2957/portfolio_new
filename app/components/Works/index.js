@@ -5,7 +5,7 @@ import Image from 'next/image';
 import styles from './Works.module.scss';
 
 const projects = [
-  { name: 'Web Design + Dev', image: '/images/project1.jpg', intro: 'In this project, I developed the website for the Pangcah Festival, an event rooted in the cultural and artistic traditions of the Pangcah (Amis) people. The website is designed to reflect the festival’s core themes of sustainability, community, and cultural heritage, while offering an engaging and intuitive experience for visitors.', link: 'https://pangcahfestival.vercel.app/' },
+  { name: 'Web Design + Dev', image: '/images/scene01.png', intro: 'In this project, I developed the website for the Pangcah Festival, an event rooted in the cultural and artistic traditions of the Pangcah (Amis) people. The website is designed to reflect the festival’s core themes of sustainability, community, and cultural heritage, while offering an engaging and intuitive experience for visitors.', link: 'https://pangcahfestival.vercel.app/' },
   { name: 'Audio-Reactive Visuals', image: '/images/project2.jpg', intro: 'In these visual works, I explore the interplay between sound and image, crafting immersive audiovisual experiences that breathe life into my own music. Using p5.js & shader for one project, and TouchDesigner for another, I’ve sought to capture the energy and emotion of each track in dynamic, reactive visuals.', link: 'https://www.youtube.com/playlist?list=PLSrYrtDJoY4fFlzNgSQpAVVAXIKhqD--k'},
   { name: 'Audio Recording & Mixing', image: '/images/project3.jpg', intro: 'Through my experiences at Dolan Recording Studio and Vitruvian Sound NYC, I’ve cultivated a deep connection to the art of recording and mixing, especially for guitar and bass. Each session is a delicate balance between capturing the raw essence of the instrument and shaping it into something more—where sound becomes a landscape, and every note finds its place within a rich, immersive mix. My approach weaves technical mastery with artistic intuition, allowing the music to breathe and resonate, preserving its soul while polishing it into something timeless.', link: 'https://soundcloud.com/jeff-jeff-619662162/tracks' },
   { name: 'Project Three', image: '/images/project3.jpg' },
@@ -72,7 +72,9 @@ const Works = () => {
               <span style={{fontSize: "5rem"}}>{projects[i].name}</span>
             </div>
             <div style={{display: 'flex', position: 'relative', paddingBottom: '100px'}}>
-              <Image className='img' href={projects[i].link} ref={el => imageRef.current[i] = el} src={projects[i].image} alt={projects[i].name} width={500} height={300} />
+              <a href={projects[i].link} target="_blank" rel="noopener noreferrer">
+                <Image className='img' ref={el => imageRef.current[i] = el} src={projects[i].image} alt={projects[i].name} width={500} height={300} />
+              </a>
               <span 
                 ref={el => textRef.current[i] = el} 
                 style={{zIndex: -1, opacity: 0, position: 'absolute', paddingLeft: '50px', paddingTop: '10px', paddingRight: '550px', fontSize: '2.5rem', fontWeight: 'lighter', lineHeight: '1.5'}}>
